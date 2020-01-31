@@ -1,20 +1,20 @@
 public class CalculatorWithOperator {
 
-    public  double addition(double a, double b){
+    public  double add(double a, double b){
 
         return  a+b;
     }
 
-    public double subtraction(double a, double b){
+    public double subtr(double a, double b){
 
         return a-b;
     }
 
-    public double multiplication(double a, double b){
+    public double multipl(double a, double b){
         return a*b;
     }
 
-    public  double division(double a,double b){
+    public  double divis(double a,double b){
 
         return a/b;
     }

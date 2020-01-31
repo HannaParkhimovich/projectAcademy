@@ -1,6 +1,6 @@
 public class CalculatorWithMath {
-    public  double add(double a, double b){
-        return  a+b;
+    public double add(double a, double b){
+        return a+b;
     }
 
     public double subtr(double a, double b){
@@ -11,7 +11,7 @@ public class CalculatorWithMath {
         return a*b;
     }
 
-    public  double divis(double a,double b){
+    public double divis(double a,double b){
         return a/b;
     }
 
@@ -25,7 +25,6 @@ public class CalculatorWithMath {
 
     public double sqrt(int s){
         return Math.sqrt(s);
-
     }
 
 
