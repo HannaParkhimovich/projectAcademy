@@ -9,8 +9,8 @@ public class Main2 {
         int a=in.nextInt();
         System.out.printf("Рузельтат перемножения всех чисел числа " + a + " =");
         Recursia rr=new Recursia();
-        rr.ost(a);
-        System.out.printf(rr.getCounter()+"\n");
+       // rr.ost(a);
+        System.out.printf(rr.ost(a)+"\n");
 
 
 

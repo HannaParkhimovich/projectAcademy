@@ -8,8 +8,10 @@ public class MainCalc {
     public static void main(String[] args) {
 
 
-        ICalculator calculator = new CalculatorDecorator(new Calculator());
+        CalculatorDecorator calculator = new CalculatorDecorator(new Calculator());
         double rez=calculator.add(4.1,calculator.add(calculator.power(calculator.divis(28,5),2),calculator.multipl(15,7)));
         System.out.println(rez);
+        System.out.println(calculator.getCounter());
+
     }
 }
