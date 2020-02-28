@@ -11,16 +11,23 @@ public class Main2 {
     public static void main(String[] args) {
 
         String str="Я люблю JAVA";
+        System.out.println("matches");
+        System.out.println("Поиск  h*: "+ str.matches("h*")); //false, т.к текст не соответствует шаблону
+        System.out.println("Поиск h+: "+ str.matches("h+"));//false, т.к текст не соответствует шаблону
+        System.out.println("Поиск h?: "+ str.matches("h?"));//false, т.к текст не соответствует шаблону
 
-        System.out.println(str.matches("h*"));
-
-        System.out.println(str.matches("h+"));
-        System.out.println(str.matches("h?"));
-
-
-        Pattern pattern = Pattern.compile("h?");
+        System.out.println("find");
+        Pattern pattern = Pattern.compile("h*");
         Matcher matcher = pattern.matcher(str);
-        System.out.println(matcher.find());
+        System.out.println("Поиск  h*: "+matcher.find());//true, т.к. в тексте есть совпадения по шаблону h*-ноль и более раз
+
+        pattern=Pattern.compile("h+");
+        matcher=pattern.matcher(str);
+        System.out.println("Поиск  h+: "+matcher.find());//false, т.к. в тексте нет совпадения по шаблону h+-один и более раз
+
+        pattern=Pattern.compile("h?");
+        matcher=pattern.matcher(str);
+        System.out.println("Поиск  h?: "+matcher.find());//true, т.к. в тексте есть совпадения по шаблону h?- один или отсутствует
 
     }
 
